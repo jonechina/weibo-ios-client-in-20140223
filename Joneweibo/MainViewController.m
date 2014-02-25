@@ -14,6 +14,8 @@
 #import "MoreViewController.h"
 #import "BaseNavigationController.h"
 
+#import "ThemeButton.h"
+
 
 @interface MainViewController ()
 
@@ -77,7 +79,8 @@
         NSString *backImage = background[i];
         NSString *heightImage = heightBackground[i];
         
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        //UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        ThemeButton *button = [[ThemeButton alloc] initWithImage:backImage highlighte:heightImage];
         button.frame = CGRectMake((64-30)/2+(i*64), (49-30)/2, 30, 30);
         button.tag = i;
         [button setImage:[UIImage imageNamed:backImage] forState:UIControlStateNormal];

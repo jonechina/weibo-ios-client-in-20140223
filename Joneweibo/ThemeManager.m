@@ -19,7 +19,7 @@ static ThemeManager *sigleton = nil;
         sigleton = [[ThemeManager alloc] init];
     }
     }
-    return nil;
+    return sigleton;  //之前未出现切换界面，因为这边填的是nil
 
 }
 
@@ -28,7 +28,7 @@ static ThemeManager *sigleton = nil;
     self = [super init];
     if (self) {
         NSString *themePath = [[NSBundle mainBundle] pathForResource:@"theme" ofType:@"plist"];
-        self.themePlist = [NSDictionary dictionaryWithContentsOfFile:themePath];
+        self.themesPlist = [NSDictionary dictionaryWithContentsOfFile:themePath];
         
         //默认为空
         self.themeName = nil;
@@ -45,7 +45,7 @@ static ThemeManager *sigleton = nil;
     }
     
     //获取主题路径
-    NSString *themePath = [self.themePlist objectForKey:_themeName];
+    NSString *themePath = [self.themesPlist objectForKey:_themeName];
     //程序包路径
     NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
     //完整的主题包路径

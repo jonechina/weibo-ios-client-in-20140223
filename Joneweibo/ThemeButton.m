@@ -42,6 +42,10 @@
     [super dealloc];
 }
 
+- (void)themeNotification:(NSNotification *)notification {
+    [self loadImage];
+}
+
 - (void)loadImage {
     ThemeManager *themeManage = [ThemeManager shareInstance];
     UIImage *image = [themeManage getThemeImage:_imageName];
@@ -66,13 +70,15 @@
     [self loadImage];
 }
 
--(void)setHighligtImageName:(NSString *)highligtImageName {
-    if (_highligtImageName != highligtImageName) {
-        [_highligtImageName release];
-        _highligtImageName = [highligtImageName copy];
+-(void)setBackgroundImageName:(NSString *)highligtImageName {
+    if (_backgroundImageName != _backgroundImageName) {
+        [_backgroundImageName release];
+        _backgroundImageName = [_backgroundImageName copy];
     }
     [self loadImage];
 }
+
+
 
 -(void)setBackgroundHighligtImageName:(NSString *)backgroundHighligtImageName {
     if (_backgroundHighligtImageName != _backgroundHighligtImageName) {

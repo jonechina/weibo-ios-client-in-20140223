@@ -13,7 +13,7 @@
 @interface ThemeManager : NSObject
 
 @property(nonatomic,retain)NSString *themeName;
-@property(nonatomic,retain)NSDictionary *themePlist;
+@property(nonatomic,retain)NSDictionary *themesPlist;
 
 + (ThemeManager *)shareInstance;
 //返回当前主题下，主题图片对于的图片名

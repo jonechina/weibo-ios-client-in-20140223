@@ -134,6 +134,8 @@
 		17B1B56918B9F9F1008179A5 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B1B56818B9F9F1008179A5 /* ThemeManager.m */; };
 		17B1B56B18B9FA23008179A5 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17B1B56A18B9FA23008179A5 /* theme.plist */; };
 		17B1B56F18BA32BC008179A5 /* ThemeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B1B56E18BA32BC008179A5 /* ThemeButton.m */; };
+		17D56B0918BCC2D40060C1BC /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D56B0718BCC2D40060C1BC /* ThemeViewController.m */; };
+		17D56B0A18BCC2D40060C1BC /* ThemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D56B0818BCC2D40060C1BC /* ThemeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,6 +315,9 @@
 		17B1B56A18B9FA23008179A5 /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
 		17B1B56D18BA32BC008179A5 /* ThemeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeButton.h; sourceTree = "<group>"; };
 		17B1B56E18BA32BC008179A5 /* ThemeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeButton.m; sourceTree = "<group>"; };
+		17D56B0618BCC2D40060C1BC /* ThemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeViewController.h; sourceTree = "<group>"; };
+		17D56B0718BCC2D40060C1BC /* ThemeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeViewController.m; sourceTree = "<group>"; };
+		17D56B0818BCC2D40060C1BC /* ThemeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThemeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,15 +416,15 @@
 		173E4A0418B3A34D00FE99B4 /* Joneweibo */ = {
 			isa = PBXGroup;
 			children = (
+				173E4A0D18B3A34D00FE99B4 /* AppDelegate.h */,
+				173E4A0E18B3A34D00FE99B4 /* AppDelegate.m */,
+				173E4A9818B3A5DC00FE99B4 /* MainViewController.h */,
+				173E4A9918B3A5DC00FE99B4 /* MainViewController.m */,
 				173E4AA218B3A9B800FE99B4 /* Home */,
 				173E4AA318B3A9C200FE99B4 /* Message */,
 				173E4AA518B3AA8700FE99B4 /* Profile */,
 				173E4AA618B3AA9900FE99B4 /* Discover */,
 				173E4AA718B3AAA500FE99B4 /* More */,
-				173E4A0D18B3A34D00FE99B4 /* AppDelegate.h */,
-				173E4A0E18B3A34D00FE99B4 /* AppDelegate.m */,
-				173E4A9818B3A5DC00FE99B4 /* MainViewController.h */,
-				173E4A9918B3A5DC00FE99B4 /* MainViewController.m */,
 				173E4A1018B3A34D00FE99B4 /* Images.xcassets */,
 				173E4A9B18B3A61300FE99B4 /* BaseView */,
 				173E4A9018B3A4F700FE99B4 /* Models */,
@@ -580,6 +585,9 @@
 				172C7FD918B64638001EAA67 /* MoreViewController.h */,
 				172C7FDA18B64638001EAA67 /* MoreViewController.m */,
 				172C7FDB18B64638001EAA67 /* MoreViewController.xib */,
+				17D56B0618BCC2D40060C1BC /* ThemeViewController.h */,
+				17D56B0718BCC2D40060C1BC /* ThemeViewController.m */,
+				17D56B0818BCC2D40060C1BC /* ThemeViewController.xib */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -830,6 +838,7 @@
 				176AA7B318B7A20B00C50907 /* tabbar_profile_selected@2x.png in Resources */,
 				176AA7A818B7A20B00C50907 /* tabbar_more.png in Resources */,
 				176AA79C18B7A20B00C50907 /* tabbar_home.png in Resources */,
+				17D56B0A18BCC2D40060C1BC /* ThemeViewController.xib in Resources */,
 				176AA77F18B7A20B00C50907 /* Icon.png in Resources */,
 				1719C9B818B9E3F0008C30A0 /* SinaWeibo.bundle in Resources */,
 				176AA78F18B7A20B00C50907 /* prlm_pull_refresh_arrow@2x.png in Resources */,
@@ -865,6 +874,7 @@
 			files = (
 				1719C9BA18B9E3F0008C30A0 /* SinaWeiboAuthorizeView.m in Sources */,
 				173E4A7D18B3A42400FE99B4 /* DDMenuController.m in Sources */,
+				17D56B0918BCC2D40060C1BC /* ThemeViewController.m in Sources */,
 				173E4A9E18B3A63900FE99B4 /* BaseViewController.m in Sources */,
 				173E4A8118B3A42400FE99B4 /* SDWebImageManager.m in Sources */,
 				172C7FD218B64608001EAA67 /* ProfileViewController.m in Sources */,
